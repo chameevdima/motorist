@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ё, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Автолюбитель</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html"class="header__logo">
+                    Автолюбитель
+                </a>
+                <nav class="header__nav nav" id="nav">
+                    <a href="#" class="nav__item nav__item-01 js-button-entrance">Вход</a>
+                    <a href="#" class="nav__item nav__item-02 js-button-register">Регистрация</a>
+                    <a href="cabinet.html" class="nav__item nav__item-03">Личный кабинет</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item" id="burger__item">Menu</span>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="overlay js-overlay-entrance">
+		<div class="popup js-popup-entrance">
+			<h2>Вход</h2>
+			<div class="authorised">
+                <form action="#" class="authorised__form">
+
+                    <div class="authorised__form-title">Логин</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">Пароль</div>
+                    <input type="password" class="authorised__form-password authorised__form-input" required>
+
+                    <button type="submit" class="authorised__form-btn">Войти</button>
+
+                    <div class="authorised__form-login">
+                        <a href="#" class="js-button-register">
+                            <span>У вас нет аккаунта? Зарегистрируйтесь</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+			<div class="close-popup js-close-entrance"></div>
+		</div>
+	</div>
+	<div class="overlay js-overlay-register">
+		<div class="popup js-popup-register">
+			<h2>Регистрация</h2>
+			<div class="authorised">
+                <form action="#" class="authorised__form">
+                    <div class="authorised__form-title">ФИО</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">Логин</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">E-mail</div>
+                    <input type="email" class="authorised__form-email authorised__form-input" required>
+
+                    <div class="authorised__form-title">Пароль</div>
+                    <input type="password" class="authorised__form-password authorised__form-input" required>
+
+                    <input class="authorised__form-checkbox" type="checkbox" checked required>
+					<label for="language" class="authorised__form-label">
+						Я соглашаюсь на обработку моих персональных данных.
+					</label>
+
+                    <button type="submit" class="authorised__form-btn">Зарегистрироваться</button>
+
+                    <div class="authorised__form-login">
+                        <a href="#" class="js-button-entrance">
+                            <span>Есть аккаунт? Войдите!</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+			<div class="close-popup js-close-register"></div>
+		</div>
+	</div>
+
+
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__info">
+                <div class="intro__info-text">
+                    <h1 class="intro__info-title">Покупаете подержанный автомобиль?</h1>
+                    <h2 class="intro__info-subtitle">— Мы подберем для Вас оптимальное предложение на рынке с гарантией технической и юридической чистоты</h1>
+                </div>
+                <div class="intro__info-img">
+                    <img src="img/intro/04.png" alt="">
+                </div>
+            </div>
+            <div class="intro__description">
+                <div class="intro__description-item">
+                    <img src="img/intro/01.svg" alt="">
+                    <p>Экономия времени</p>
+                    <p>Вы тратите не более двух часов времени на подбор вашего авто.</p>
+
+                </div>
+                <div class="intro__description-item">
+                    <img src="img/intro/03.svg" alt="">
+                    <p>Обоснованный торг</p>
+                    <p>В 95% случаев потраченные на нас средства окупаются благодаря торгу</p>
+                </div>
+                <div class="intro__description-item">
+                    <img src="img/intro/02.svg" alt="">
+                    <p>Отчеты в личном кабинете</p>
+                    <p>Получаете каждый день отчеты о проверенных авто</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="repairs">
+        <div class="container">
+            <div class="repairs__inner">
+                <div class="repairs__item">
+                    <div class="repairs__item-inner">
+                        <img src="img/repairs/01.jpg" alt="">
+                        <div class="repairs__item-text">
+                            <div class="repairs__item-title">
+                                Гарантия юридической чистоты
+                            </div>
+                            <div class="repairs__item-subtitle">
+                                Вы приобретаете автомобиль без кредитных и залоговых обязательств, запрета на регистрацию и других ограничений
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repairs__item">
+                    <div class="repairs__item-inner">
+                        <img src="img/repairs/02.jpg" alt="">
+                        <div class="repairs__item-text">
+                            <div class="repairs__item-title">
+                                Техническая гарантия 2 месяца
+                            </div>
+                            <div class="repairs__item-subtitle">
+                                Все неисправности, которые мы не заметим во время проверки или которые возникнут в течение двухмесячной гарантии, мы устраним за свой счет
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repairs__item">
+                    <div class="repairs__item-inner">
+                        <img src="img/repairs/03.jpg" alt="">
+                        <div class="repairs__item-text">
+                            <div class="repairs__item-title">
+                                Гарантия 100% возврата денег
+                            </div>
+                            <div class="repairs__item-subtitle">
+                                Если мы не сможем найти для Вас требуемый автомобиль в установленные сроки — вернем предоплату в полном объёме.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="container">
+            <div class="info__inner">
+                <div class="info__column info__text">
+                    <p>
+                        Собираетесь приобрести подержанный автомобиль? Рекомендуем воспользоваться нашей услугой по подбору авто с пробегом. Внешний вид автомобиля зачастую обманчив. 90% всех авто имеют какие-либо скрытые дефекты, проблемы с постановкой на учет, либо продаются как "небитые/некрашенные", а на самом деле получали серьезный урон после ДТП. Обратившись в нашу компанию, вы получите лучший автомобиль за ваши деньги.
+                    </p>
+                </div>
+                <div class="info__column info__img">
+                    <div class="info__column-img">
+                        <img src="img/info/01.jpg" alt="">
+                        <p>Автолюбитель</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tasks">
+        <div class="container">
+            <div class="tasks__inner">
+                <h3>Авто которые мы уже подобрали</h3>
+                <div class="tasks__item">
+                    <div class="tasks__item-img">
+                        <img src="img/tasks/01.jpg" alt="">
+                    </div>
+                    <div class="tasks__item-info">
+                        <div class="tasks__info-name-auto">
+                            Mercedes-Benz GLK-klasse
+                        </div>
+                        <div class="tasks__info-name">
+                            Михаил
+                        </div>
+                        <div class="tasks__info-criteria">
+                            <b>Критерии подбора</b>
+                            <p>Mercedes-Benz GLK-klasse от 2010 года</p>
+                        </div>
+                        <div class="tasks__info-result">
+                            <b>Результат</b>
+                            <p>Mercedes-Benz GLK-klasse 2011 года, 2.1, АКПП, 1 владелец, пробег 91 тыс. км</p>
+                        </div>
+                        <div class="tasks__info-search">
+                            Поиск занял<b> 6 дней</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks__item">
+                    <div class="tasks__item-img">
+                        <img src="img/tasks/02.jpg" alt="">
+                    </div>
+                    <div class="tasks__item-info">
+                        <div class="tasks__info-name-auto">
+                            Volkswagen Polo
+                        </div>
+                        <div class="tasks__info-name">
+                            Екатерина
+                        </div>
+                        <div class="tasks__info-criteria">
+                            <b>Критерии подбора</b>
+                            <p>Volkswagen Polo, от 2016 года</p>
+                        </div>
+                        <div class="tasks__info-result">
+                            <b>Результат</b>
+                            <p>Volkswagen Polo, 2017 года, 1.6, АКПП, 1 владелец, пробег 74 тыс. км</p>
+                        </div>
+                        <div class="tasks__info-search">
+                            Поиск занял<b> 12 дней</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks__item">
+                    <div class="tasks__item-img">
+                        <img src="img/tasks/03.jpg" alt="">
+                    </div>
+                    <div class="tasks__item-info">
+                        <div class="tasks__info-name-auto">
+                            Mercedes-Benz C-klasse
+                        </div>
+                        <div class="tasks__info-name">
+                            Алексей
+                        </div>
+                        <div class="tasks__info-criteria">
+                            <b>Критерии подбора</b>
+                            <p>Mazda 6 III Рестайлинг от 2015</p>
+                        </div>
+                        <div class="tasks__info-result">
+                            <b>Результат</b>
+                            <p>Mercedes-Benz C-klasse, 2014 года, 2.0, АКПП, 1 владелец, 98 тыс. км</p>
+                        </div>
+                        <div class="tasks__info-search">
+                            Поиск занял<b> 13 дней</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks__item">
+                    <div class="tasks__item-img">
+                        <img src="img/tasks/04.jpg" alt="">
+                    </div>
+                    <div class="tasks__item-info">
+                        <div class="tasks__info-name-auto">
+                            Mercedes-Benz E-klasse
+                        </div>
+                        <div class="tasks__info-name">
+                            Дмитрий
+                        </div>
+                        <div class="tasks__info-criteria">
+                            <b>Критерии подбора</b>
+                            <p>Mercedes-Benz E-klasse IV от 2013</p>
+                        </div>
+                        <div class="tasks__info-result">
+                            <b>Результат</b>
+                            <p>Mercedes-Benz E-klasse 2015 года, 2.0, АКПП, 2 владельца, пробег 103 тыс. км</p>
+                        </div>
+                        <div class="tasks__info-search">
+                            Поиск занял<b> 18 дней</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__social">
+                <a href="#" class="footer__item">
+                    <img src="img/footer/01.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/02.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/03.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/04.svg">
+                </a>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-item">+ 7 800 555-35-35</div>
+                <div class="footer__contacts-item">8:00–19:00 Пн — Пт </div>
+                <div class="footer__contacts-item">masterOK@mail.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
